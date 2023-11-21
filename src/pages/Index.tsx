@@ -24,7 +24,7 @@ function Index() {
           React Custom Hooks
         </CardContent>
         <CardDescription>
-          <p>useLocalStoage Hook, useTheme Hook, etc..</p>
+          <p>useLocalStoage Hook, useTheme Hook, useDebounce Hook, etc..</p>
         </CardDescription>
       </Card>
       <Card className="w-full max-w-sm p-6 space-y-2 text-center flex flex-col items-center justify-center">
@@ -33,7 +33,7 @@ function Index() {
           File based routing
         </CardContent>
         <CardDescription>
-          <p>All icons u need with one library with custom Icons component</p>
+          <p>Routes with react-router</p>
         </CardDescription>
       </Card>
       <Card className="w-full max-w-sm p-6 space-y-2 text-center flex flex-col items-center justify-center">
@@ -55,9 +55,7 @@ function Index() {
         </CardDescription>
       </Card>
       <Card className="w-full max-w-sm p-6 space-y-2 text-center flex flex-col items-center justify-center">
-        {/* <CardTitle className="text-4xl">  <Icons.Confetti /></CardTitle> */}
         <CardContent className="  text-xl">
-          {/* Cutom Icons  with react-icons */}
           <Counter />
         </CardContent>
         <CardDescription>

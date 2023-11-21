@@ -26,7 +26,6 @@ const router = createBrowserRouter([
       {
         path: "/Components",
         element: <Components />,
-        index: true,
       },
     ]
   },
