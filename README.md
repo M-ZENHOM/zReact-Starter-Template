@@ -18,7 +18,7 @@ This template provides a starter setup to get React working in Vite Fully writte
 
 ## Installation
 
-     git clone https://github.com/boussadjra/zReact-Starter-Template.git
+     git clone https://github.com/M-ZENHOM/zReact-Starter-Template.git
      cd zReact-Starter-Template
      pnpm install
      pnpm run dev
