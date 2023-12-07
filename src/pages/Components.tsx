@@ -1,11 +1,12 @@
-import { Button } from "../components/Button";
-import { Card, CardContent, CardDescription, CardFooter, CardTitle } from "../components/Card";
+import { Button } from "../components/ui/Button";
+import { Card, CardContent, CardDescription, CardFooter, CardTitle } from "../components/ui/Card";
 import Wrapper from "../components/Wrapper";
 import Image from '../assets/img.jpg'
 import SEO from "../lib/SEO";
 import { Icons } from "../components/Icons";
-import { ADContent, ADDescription, ADFooter, ADTitle, ActionButton, AlertDialoag, AlertTrigger, CancelButton } from "../components/Alert-Dialoag";
+import { ADContent, ADDescription, ADFooter, ADTitle, ActionButton, AlertDialoag, AlertTrigger, CancelButton } from "../components/ui/Alert-Dialoag";
 import { useState } from "react";
+import GlowBG from "../components/GlowBG";
 
 const variants = ["default", "outline", "secondary", "destructive", "ghost", "violet", "neon"]
 
@@ -14,7 +15,7 @@ export default function Components() {
     return (
         <Wrapper className="px-8 pb-20">
             <SEO title="Components" description="This template is built on top of Vite, React.js and Tailwind CSS" />
-            <div className="absolute top-0 left-[50%] -translate-x-[50%] w-full md:w-[700px] h-[500px]  dark:bg-blue-500/10 blur-3xl opacity-75 -z-10" />
+            <GlowBG />
             <h2 className="text-extrabold text-3xl tracking-tight my-5">Buttons</h2>
             {/* Buttons */}
             <div className="flex flex-wrap items-center gap-3 md:space-x-4">

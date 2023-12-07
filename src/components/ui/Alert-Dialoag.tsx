@@ -1,5 +1,5 @@
 import React from "react"
-import { cn } from "../lib/utils"
+import { cn } from "../../lib/utils"
 
 
 const AlertTrigger = React.forwardRef<HTMLButtonElement, React.HTMLAttributes<HTMLButtonElement>>(({ className, ...props }, ref) => (
@@ -36,7 +36,7 @@ const AlertDialoag = React.forwardRef<HTMLDivElement, AlertDialoagProps>(({ clas
         <div
             ref={ref}
             className={cn({ "fixed": props.open, "hidden": !props.open },
-                " top-[50%] left-[50%] -translate-x-[50%] -translate-y-[50%] w-full max-w-md rounded-md p-4 min-h-[150px] bg-white z-50",
+                " top-[50%] left-[50%] -translate-x-[50%] -translate-y-[50%] w-full max-w-md rounded-md p-4 min-h-[150px] bg-black dark:bg-white z-50",
                 className
             )}
             {...props}
@@ -51,7 +51,7 @@ const ADTitle = React.forwardRef<HTMLHeadingElement, React.HTMLAttributes<HTMLHe
     <h2
         ref={ref}
         className={cn(
-            "text-md font-semibold text-gray-900",
+            "text-md font-semibold text-white dark:text-gray-900",
             className
         )}
         {...props}
@@ -63,7 +63,7 @@ ADTitle.displayName = "ADTitle"
 const ADDescription = React.forwardRef<HTMLParagraphElement, React.HTMLAttributes<HTMLParagraphElement>>(({ className, ...props }, ref) => (
     <p
         ref={ref}
-        className={cn("text-sm text-gray-500", className)}
+        className={cn("text-sm text-gray-300 dark:text-gray-500", className)}
         {...props}
     />
 ))
@@ -86,7 +86,7 @@ const CancelButton = React.forwardRef<HTMLButtonElement, React.HTMLAttributes<HT
     <button
         ref={ref}
         className={cn(
-            "inline-flex items-center justify-center rounded-md bg-black px-4 py-2 text-sm font-semibold text-white hover:bg-black/80",
+            "inline-flex items-center justify-center rounded-md bg-white dark:bg-black px-4 py-2 text-sm font-semibold dark:text-white hover:bg-white/80 dark:hover:bg-black/80",
             className
         )}
         {...props}
@@ -98,7 +98,7 @@ const ActionButton = React.forwardRef<HTMLButtonElement, React.HTMLAttributes<HT
     <button
         ref={ref}
         className={cn(
-            "inline-flex items-center justify-center rounded-md bg-black px-4 py-2 text-sm font-semibold text-white hover:bg-black/80",
+            "inline-flex items-center justify-center rounded-md bg-red-700 px-4 py-2 text-sm font-semibold text-white hover:bg-red-700/90",
             className
         )}
         {...props}
